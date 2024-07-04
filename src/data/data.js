@@ -41,7 +41,7 @@ const DATA = [
   {
     id: 4,
     image: Lespetitsplats,
-    title: 'LES PETIS PLATS',
+    title: 'LES PETITS PLATS',
     description: `Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de se lancer dans un nouveau projet : réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g.`,
     technologie: [HtmlLogo, SassLogo, JsLogo],
     link: 'https://github.com/afarkhsi/les_petits_plats.git',
