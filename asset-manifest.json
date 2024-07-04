@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4da6e973.css",
-    "main.js": "/portfolio/static/js/main.f2753610.js",
+    "main.js": "/portfolio/static/js/main.a44bdb4c.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/creative-light.jpg": "/portfolio/static/media/creative-light.04e2f79ae566f0d3ac4b.jpg",
     "static/media/website-lespetitsplats.png": "/portfolio/static/media/website-lespetitsplats.9edd0cb5b79ab2d71af7.png",
@@ -20,11 +20,11 @@
     "static/media/css.png": "/portfolio/static/media/css.7b319d749db8f8061d9e.png",
     "index.html": "/portfolio/index.html",
     "main.4da6e973.css.map": "/portfolio/static/css/main.4da6e973.css.map",
-    "main.f2753610.js.map": "/portfolio/static/js/main.f2753610.js.map",
+    "main.a44bdb4c.js.map": "/portfolio/static/js/main.a44bdb4c.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4da6e973.css",
-    "static/js/main.f2753610.js"
+    "static/js/main.a44bdb4c.js"
   ]
 }
