@@ -1,29 +1,22 @@
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SocialMedias from './components/SocialMedias/SocialMedias';
 import HomePage from './pages/home';
+import Projects from './pages/projects';
+import Contact from './pages/contacts';
 
 function App() {
   return (
-    <>
-      {/* <Router> */}
-      <HomePage />
-      {/* <Routes>
-        <Route path="/mesprojets" element={<HomePage />} />
-        <Route path="/contacts" element={<HomePage />} />
+    <HashRouter>
+      <NavBar />
+      <SocialMedias />
+      <Routes>
         <Route exact path="/" element={<HomePage />} />
-      </Routes> */}
-      {/* 
-      // <Routes>
-      //   <Route path="/portfolio/" element={<HomePage />} />
-      //   <Route path="/portfolio/mesprojets" element={<HomePage />} />
-      //   <Route path="/portfolio/contacts" element={<HomePage />} />
-      // </Routes> */}
-      {/* </Router> */}
-    </>
+        <Route path="/mesprojets" element={<Projects />} />
+        <Route path="/contacts" element={<Contact />} />
+      </Routes>
+    </HashRouter>
   );
 }
 

@@ -1,9 +1,16 @@
+import { Link } from 'react-router-dom';
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNodedotjs,
+  SiMysql,
+  SiSpringboot,
+  SiFlutter,
+} from 'react-icons/si';
+import { BiLogoJava, BiLogoAngular, BiLogoPython } from 'react-icons/bi';
 import './style.css';
-import ReactLogo from './../../assets/logo/react-logo.png';
-import JsLogo from './../../assets/logo/JavaScript-logo.png';
-import NodeLogo from './../../assets/logo/node-js-log.png';
 import Logo from './../../assets/logo/logo.png';
-import TsLogo from './../../assets/logo/ts-logo.png';
 
 const About = () => {
   return (
@@ -16,53 +23,67 @@ const About = () => {
           &lt; &gt;
           <div className="about_description_container_languages">
             <span>
-              <img src={JsLogo} alt="logo js" className="language-logo" />
+              <SiJavascript className="language-logo" color="#F7DF1E" />
               <p>JavaScript</p>
             </span>
             <span>
-              <img src={TsLogo} alt="logo ts" className="language-logo" />
+              <SiTypescript className="language-logo" color="#3178C6" />
               <p>TypeScript</p>
             </span>
             <span>
-              <img src={ReactLogo} alt="logo react" className="language-logo" />
+              <SiReact className="language-logo" color="#61DAFB" />
               <p>React</p>
             </span>
             <span>
-              <img src={NodeLogo} alt="logo node" className="language-logo" />
+              <SiNodedotjs className="language-logo" color="#339933" />
               <p>Node.js</p>
+            </span>
+            <span>
+              <SiSpringboot className="language-logo" color="#6DB33F" />
+              <p>Spring Boot</p>
+            </span>
+            <span>
+              <BiLogoAngular className="language-logo" color="#DD0031" />
+              <p>Angular</p>
+            </span>
+            <span>
+              <SiFlutter className="language-logo" color="#00C5D5" />
+              <p>Flutter</p>
+            </span>
+            <span>
+              <BiLogoPython className="language-logo" color="#3776AB" />
+              <p>Python</p>
+            </span>
+            <span>
+              <SiMysql className="language-logo" color="#4479A1" />
+              <p>SQL</p>
             </span>
           </div>
           &lt;/&gt;
         </div>
         <p className="about_description_details">
-          Captivé par la création et le dévelopment web, je mets en pratique mes
-          conaissances ainsi que mes compétences pour produire des applications
-          web performantes et dynamiques.
+          Passionné par le développement et l'innovation, je mets mes
+          compétences full-stack au service de la création d'applications web et
+          mobiles performantes, fiables et pensées pour l'utilisateur.
         </p>
       </div>
-      {/* <a className="about_description_link" href="#/mesprojets">
+      <Link to="/mesprojets" className="cssbuttons-io-button">
         MES PROJETS
-      </a> */}
-      <button className="cssbuttons-io-button">
-        {' '}
-        MES PROJETS
-        <a href="#/mesprojets">
-          <div className="icon">
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </div>
-        </a>
-      </button>
+        <div className="icon">
+          <svg
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </Link>
     </section>
   );
 };

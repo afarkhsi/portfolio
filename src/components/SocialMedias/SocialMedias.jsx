@@ -6,9 +6,9 @@ import './style.css';
 const SocialMedias = () => {
   return (
     <div className="networks">
-      <a className="networks_link" href="/">
+      {/* <a className="networks_link" href="/">
         <img className="networks_link_logo" src={Twitter} alt="logo twitter" />
-      </a>
+      </a> */}
       <a
         className="networks_link"
         href="https://www.linkedin.com/in/abdourrahman-farkhsi-36a294139/"

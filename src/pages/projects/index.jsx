@@ -2,7 +2,6 @@ import Card from '../../components/Card/Card';
 import DATA from '../../data/data';
 
 const Projects = () => {
-  // console.log(DATA);
   return (
     <section className="cards">
       {DATA &&
@@ -14,6 +13,7 @@ const Projects = () => {
             title={card.title}
             description={card.description}
             technologie={card.technologie}
+            tags={card.tags}
             link={card.link}
           />
         ))}

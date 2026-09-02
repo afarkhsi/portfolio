@@ -1,20 +1,36 @@
+import { NavLink } from 'react-router-dom';
 import './style.css';
 
 const NavBar = () => {
   return (
     <section className="header">
       <div className="header_title">A.Farkhsi</div>
-      <div className="header_nav">
-        <a className="header_nav_link" href="#/">
-          HOME
-        </a>
-        <a className="header_nav_link" href="#/mesprojets">
-          PROJECTS
-        </a>
-        <a className="header_nav_link" href="#/contacts">
-          CONTACTS
-        </a>
-      </div>
+      <nav className="header_nav">
+        <NavLink
+          className={({ isActive }) =>
+            'header_nav_link' + (isActive ? ' active' : '')
+          }
+          to="/"
+        >
+          ACCUEIL
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            'header_nav_link' + (isActive ? ' active' : '')
+          }
+          to="/mesprojets"
+        >
+          PROJETS
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            'header_nav_link' + (isActive ? ' active' : '')
+          }
+          to="/contacts"
+        >
+          CONTACT
+        </NavLink>
+      </nav>
     </section>
   );
 };
