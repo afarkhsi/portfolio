@@ -2,10 +2,6 @@
   max-width: 500px;
   width: 100%;
   height: 400px;
-  /* height: 100%; */
-  /* height: 300px; */
-  /* border-radius: 10px;
-  border: 2px solid black; */
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   display: flex;
@@ -13,8 +9,6 @@
   justify-content: space-around;
   position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* border: 1px solid rgba(149, 157, 165, 0.2); */
-  /* border-radius: 5px; */
   box-shadow: 0 0 1em rgba(107, 107, 107, 0.3);
   border-radius: 5px;
 }
@@ -60,7 +54,6 @@
 
 .card_description_header_link {
   font-family: 'Righteous', sans-serif;
-  /* transition: all 0.2s ease-in-out; */
   text-decoration: none;
   color: rgb(0, 0, 0);
   width: 150px;
@@ -199,10 +192,6 @@
     height: 20px;
     width: 100px;
   }
-
-  /* .card_description_content {
-    font-size: 10px;
-  } */
 
   .card_description_content {
     font-size: 10px;

@@ -10,7 +10,7 @@ import {
 } from 'react-icons/si';
 import { BiLogoJava, BiLogoAngular, BiLogoPython } from 'react-icons/bi';
 import './style.css';
-import Logo from './../../assets/logo/logo.png';
+import Logo from './../../assets/logo/logo-transparent.png';
 
 const About = () => {
   return (
@@ -67,7 +67,7 @@ const About = () => {
           mobiles performantes, fiables et pensées pour l'utilisateur.
         </p>
       </div>
-      <Link to="/mesprojets" className="cssbuttons-io-button">
+      {/* <Link to="/mesprojets" className="cssbuttons-io-button">
         MES PROJETS
         <div className="icon">
           <svg
@@ -83,6 +83,24 @@ const About = () => {
             ></path>
           </svg>
         </div>
+      </Link> */}
+      <Link to="/mesprojets" className="modern-button">
+        <span className="modern-button_label">Mes projets</span>
+        <span className="modern-button_icon">
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M5 12h14" />
+            <path d="m13 6 6 6-6 6" />
+          </svg>
+        </span>
       </Link>
     </section>
   );
