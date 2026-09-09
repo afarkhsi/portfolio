@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './style.css';
+import ModernButton from '../ModernButton/ModernButton';
 
 emailjs.init({
   publicKey: 'eIE9xQJLjObkTw9_W',
@@ -152,9 +153,9 @@ function Form() {
           )}
         </div>
 
-        <input
+        <ModernButton
           type="submit"
-          value={isSending ? 'Envoi...' : 'Envoyer'}
+          label={isSending ? 'Envoi...' : 'Envoyer'}
           disabled={isSending}
         />
       </form>
@@ -165,14 +166,6 @@ function Form() {
             className={`modal_box modal_box_${modalStatus}`}
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              className="modal_close"
-              onClick={closeModal}
-              aria-label="Fermer"
-            >
-              ×
-            </button>
-
             {modalStatus === 'success' && (
               <>
                 <div className="modal_icon modal_icon_success">

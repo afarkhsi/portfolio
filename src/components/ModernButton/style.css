@@ -1,0 +1,139 @@
+.modern-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  max-width: 250px;
+  width: 100%;
+  height: 50px;
+  padding: 0 1.6em;
+  align-self: center;
+  margin-bottom: 20px;
+  font-family: 'Righteous', sans-serif;
+  font-size: clamp(14px, 3vw, 16px);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  background: white;
+  border: 2px solid #111;
+  border-radius: 10em;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: nowrap;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+  transition:
+    border-color 0.4s ease,
+    transform 0.3s ease;
+}
+
+.modern-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 77, 1) 0%,
+    rgba(0, 255, 209, 1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -2;
+}
+
+.modern-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 77, 1) 0%,
+    rgba(0, 255, 209, 1) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.modern-button_label {
+  color: #111;
+  transition: color 0.4s ease;
+}
+
+.modern-button:hover {
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+.modern-button:hover::before {
+  opacity: 0.06;
+}
+
+.modern-button:hover::after {
+  opacity: 1;
+}
+
+.modern-button:hover .modern-button_label {
+  color: rgba(255, 0, 77, 1);
+}
+
+.modern-button_icon {
+  display: flex;
+  align-items: center;
+  color: #111;
+  transition:
+    transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.4s ease;
+}
+
+.modern-button:hover .modern-button_icon {
+  transform: translateX(4px);
+  color: rgba(255, 0, 77, 1);
+}
+
+.modern-button:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.modern-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  .modern-button {
+    max-width: 220px;
+    height: 46px;
+    padding: 0 1.3em;
+  }
+}
+
+@media (max-width: 350px) {
+  .modern-button {
+    max-width: 190px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modern-button,
+  .modern-button::before,
+  .modern-button::after,
+  .modern-button_label,
+  .modern-button_icon {
+    transition: none;
+  }
+}

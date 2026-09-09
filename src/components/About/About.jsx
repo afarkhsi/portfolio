@@ -9,6 +9,7 @@ import {
   SiFlutter,
 } from 'react-icons/si';
 import { BiLogoJava, BiLogoAngular, BiLogoPython } from 'react-icons/bi';
+import ModernButton from '../ModernButton/ModernButton';
 import './style.css';
 import Logo from './../../assets/logo/logo-transparent.png';
 
@@ -67,41 +68,7 @@ const About = () => {
           mobiles performantes, fiables et pensées pour l'utilisateur.
         </p>
       </div>
-      {/* <Link to="/mesprojets" className="cssbuttons-io-button">
-        MES PROJETS
-        <div className="icon">
-          <svg
-            height="24"
-            width="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </div>
-      </Link> */}
-      <Link to="/mesprojets" className="modern-button">
-        <span className="modern-button_label">Mes projets</span>
-        <span className="modern-button_icon">
-          <svg
-            viewBox="0 0 24 24"
-            width="18"
-            height="18"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M5 12h14" />
-            <path d="m13 6 6 6-6 6" />
-          </svg>
-        </span>
-      </Link>
+      <ModernButton to="/mesprojets" label="Mes projets" />
     </section>
   );
 };
