@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.00c9c424.css",
-    "main.js": "/portfolio/static/js/main.dd1a3ba4.js",
+    "main.css": "/portfolio/static/css/main.d87b7f4a.css",
+    "main.js": "/portfolio/static/js/main.02b5bcc2.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/creative-light.jpg": "/portfolio/static/media/creative-light.04e2f79ae566f0d3ac4b.jpg",
     "static/media/website-numdev.png": "/portfolio/static/media/website-numdev.143f9df7244d0eaa1121.png",
     "static/media/website-lespetitsplats.png": "/portfolio/static/media/website-lespetitsplats.9edd0cb5b79ab2d71af7.png",
     "static/media/website-telesport.png": "/portfolio/static/media/website-telesport.027bf925dbf6e05523b9.png",
     "static/media/website-chatop.png": "/portfolio/static/media/website-chatop.9ced64893180f4a5c309.png",
-    "static/media/logo.png": "/portfolio/static/media/logo.3a51a2edcb769748a912.png",
     "static/media/website-hrnet.png": "/portfolio/static/media/website-hrnet.b2df3982d5dfc178197d.png",
     "static/media/bobapp.png": "/portfolio/static/media/bobapp.148ec1379643c672e7a0.png",
+    "static/media/logo-transparent.png": "/portfolio/static/media/logo-transparent.6c71b2a0aa9ffe5ba988.png",
     "static/media/website-kasa.png": "/portfolio/static/media/website-kasa.b52b6e3a0bdfc8b500bf.png",
     "static/media/website-ohmyfood.png": "/portfolio/static/media/website-ohmyfood.410a86c001c3bd925d8c.png",
     "static/media/website-fisheye.png": "/portfolio/static/media/website-fisheye.a8d1049f829d9e6c6884.png",
@@ -30,12 +30,12 @@
     "static/media/JavaScript-logo.png": "/portfolio/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "static/media/css.png": "/portfolio/static/media/css.7b319d749db8f8061d9e.png",
     "index.html": "/portfolio/index.html",
-    "main.00c9c424.css.map": "/portfolio/static/css/main.00c9c424.css.map",
-    "main.dd1a3ba4.js.map": "/portfolio/static/js/main.dd1a3ba4.js.map",
+    "main.d87b7f4a.css.map": "/portfolio/static/css/main.d87b7f4a.css.map",
+    "main.02b5bcc2.js.map": "/portfolio/static/js/main.02b5bcc2.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c9c424.css",
-    "static/js/main.dd1a3ba4.js"
+    "static/css/main.d87b7f4a.css",
+    "static/js/main.02b5bcc2.js"
   ]
 }
