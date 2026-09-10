@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 import './style.css';
 
-function ModernButton({ to, label, type = 'link', disabled = false }) {
+function ModernButton({
+  to,
+  label,
+  type = 'link',
+  disabled = false,
+  download,
+}) {
   const content = (
     <>
       <span className="modern-button_label">{label}</span>
@@ -16,8 +22,18 @@ function ModernButton({ to, label, type = 'link', disabled = false }) {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M5 12h14" />
-          <path d="m13 6 6 6-6 6" />
+          {type === 'download' ? (
+            <>
+              <path d="M12 3v13" />
+              <path d="m7 11 5 5 5-5" />
+              <path d="M5 21h14" />
+            </>
+          ) : (
+            <>
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </>
+          )}
         </svg>
       </span>
     </>
@@ -28,6 +44,14 @@ function ModernButton({ to, label, type = 'link', disabled = false }) {
       <button type="submit" className="modern-button" disabled={disabled}>
         {content}
       </button>
+    );
+  }
+
+  if (type === 'download') {
+    return (
+      <a href={to} download={download} className="modern-button">
+        {content}
+      </a>
     );
   }
 

@@ -191,6 +191,43 @@
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
+.cv_download {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cv_download_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.9em 1.8em;
+  font-family: 'Righteous', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 77, 1) 0%,
+    rgba(0, 255, 209, 1) 100%
+  );
+  border-radius: 10em;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cv_download_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 0, 77, 0.25);
+}
+
+.cv_download_button:active {
+  transform: translateY(0) scale(0.97);
+}
 
 @media (max-width: 600px) {
   .cv_skills_grid {

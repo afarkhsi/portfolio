@@ -1,3 +1,4 @@
+import ModernButton from '../ModernButton/ModernButton';
 import './style.css';
 
 function CvModal({ onClose }) {
@@ -197,6 +198,14 @@ function CvModal({ onClose }) {
                 Université Paris XII Créteil (94) • 2017 à 2019
               </p>
             </article>
+          </section>
+          <section className="cv_download">
+            <ModernButton
+              type="download"
+              to="/cv-abdourrahman-farkhsi.pdf"
+              download="CV-Abdourrahman-Farkhsi.pdf"
+              label="Télécharger mon CV"
+            />
           </section>
         </div>
       </div>

@@ -3,7 +3,7 @@ import {
   SiJavascript,
   SiTypescript,
   SiReact,
-  SiNodedotjs,
+  SiJava,
   SiMysql,
   SiSpringboot,
   SiFlutter,
@@ -36,8 +36,12 @@ const About = () => {
               <p>React</p>
             </span>
             <span>
-              <SiNodedotjs className="language-logo" color="#339933" />
-              <p>Node.js</p>
+              <BiLogoPython className="language-logo" color="#3776AB" />
+              <p>Python</p>
+            </span>
+            <span>
+              <BiLogoJava className="language-logo" color="#339933" />
+              <p>Java</p>
             </span>
             <span>
               <SiSpringboot className="language-logo" color="#6DB33F" />
@@ -50,10 +54,6 @@ const About = () => {
             <span>
               <SiFlutter className="language-logo" color="#00C5D5" />
               <p>Flutter</p>
-            </span>
-            <span>
-              <BiLogoPython className="language-logo" color="#3776AB" />
-              <p>Python</p>
             </span>
             <span>
               <SiMysql className="language-logo" color="#4479A1" />
