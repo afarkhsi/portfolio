@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   SiJavascript,
   SiTypescript,
@@ -14,12 +15,14 @@ import './style.css';
 import Logo from './../../assets/logo/logo-transparent.png';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about">
       <img src={Logo} className="bg-logo" alt="logo" />
       <h1 className="about_title">ABDOURRAHMAN FARKHSI</h1>
       <div className="about_description">
-        <h2 className="about_description_title">DEVELOPPEUR FULL-STACK</h2>
+        <h2 className="about_description_title">{t('about.jobTitle')}</h2>
         <div className="about_description_container">
           &lt; &gt;
           <div className="about_description_container_languages">
@@ -62,13 +65,9 @@ const About = () => {
           </div>
           &lt;/&gt;
         </div>
-        <p className="about_description_details">
-          Passionné par le développement et l'innovation, je mets mes
-          compétences full-stack au service de la création d'applications web et
-          mobiles performantes, fiables et pensées pour l'utilisateur.
-        </p>
+        <p className="about_description_details">{t('about.description')}</p>
       </div>
-      <ModernButton to="/mesprojets" label="Mes projets" />
+      <ModernButton to="/mesprojets" label={t('about.projectsButton')} />
     </section>
   );
 };

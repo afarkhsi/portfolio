@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import './style.css';
 import ModernButton from '../ModernButton/ModernButton';
@@ -9,6 +10,7 @@ emailjs.init({
 
 function Form() {
   const form = useRef();
+  const { t } = useTranslation();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [message, setMessage] = useState('');
@@ -65,7 +67,7 @@ function Form() {
     <>
       <form ref={form} onSubmit={sendEmail}>
         <div className="formData">
-          <label htmlFor="firstName">Prénom</label>
+          <label htmlFor="firstName">{t('form.prenom')}</label>
           <input
             className="text-control"
             name="user_firstName"
@@ -75,9 +77,7 @@ function Form() {
               const value = e.target.value;
               setFirstName(value);
               setFirstNameErrorMessage(
-                value.trim().length >= 2
-                  ? ''
-                  : 'Veuillez renseigner au moins 2 caractères',
+                value.trim().length >= 2 ? '' : t('form.minimumInvalid'),
               );
             }}
           />
@@ -87,7 +87,7 @@ function Form() {
         </div>
 
         <div className="formData">
-          <label htmlFor="lastName">Nom</label>
+          <label htmlFor="lastName">{t('form.name')}</label>
           <input
             className="text-control"
             name="user_lastName"
@@ -97,9 +97,7 @@ function Form() {
               const value = e.target.value;
               setLastName(value);
               setLastNameErrorMessage(
-                value.trim().length >= 2
-                  ? ''
-                  : 'Veuillez renseigner au moins 2 caractères',
+                value.trim().length >= 2 ? '' : t('form.minimumInvalid'),
               );
             }}
           />
@@ -109,7 +107,7 @@ function Form() {
         </div>
 
         <div className="formData">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">{t('form.email')}</label>
           <input
             className="text-control"
             name="user_email"
@@ -120,9 +118,7 @@ function Form() {
               const value = e.target.value;
               setEmail(value);
               setEmailErrorMessage(
-                regexEmail.test(value)
-                  ? ''
-                  : 'Veuillez renseigner une adresse email valide',
+                regexEmail.test(value) ? '' : t('form.emailInvalid'),
               );
             }}
           />
@@ -132,19 +128,19 @@ function Form() {
         </div>
 
         <div className="formData">
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">{t('form.message')}</label>
           <textarea
             className="text-control"
             name="user_message"
             id="message"
-            placeholder="Votre message"
+            placeholder={t('form.yourMessage')}
             onChange={(e) => {
               const value = e.target.value;
               setMessage(value);
               setMessageErrorMessage(
                 value.trim().length >= 20
                   ? ''
-                  : 'Votre message doit contenir au moins 20 caractères',
+                  : t('form.minimumMessageInvalid'),
               );
             }}
           />
@@ -155,7 +151,7 @@ function Form() {
 
         <ModernButton
           type="submit"
-          label={isSending ? 'Envoi...' : 'Envoyer'}
+          label={isSending ? 'Envoi...' : t('form.submit')}
           disabled={isSending}
         />
       </form>
@@ -183,8 +179,8 @@ function Form() {
                     />
                   </svg>
                 </div>
-                <h3>Message envoyé !</h3>
-                <p>Merci pour votre message, je vous répondrai rapidement.</p>
+                <h3>{t('form.success')}</h3>
+                <p>{t('form.messageSuccess')}</p>
               </>
             )}
 
@@ -204,8 +200,8 @@ function Form() {
                     />
                   </svg>
                 </div>
-                <h3>Erreur d'envoi</h3>
-                <p>Une erreur est survenue. Merci de réessayer plus tard.</p>
+                <h3>{t('form.error')}</h3>
+                <p>{t('form.messageError')}</p>
               </>
             )}
 
@@ -225,13 +221,13 @@ function Form() {
                     />
                   </svg>
                 </div>
-                <h3>Formulaire incomplet</h3>
-                <p>Merci de vérifier les champs avant l'envoi.</p>
+                <h3>{t('form.invalid')}</h3>
+                <p>{t('form.messageInvalid')}</p>
               </>
             )}
 
             <button className="modal_action" onClick={closeModal}>
-              OK
+              {t('form.ok')}
             </button>
           </div>
         </div>

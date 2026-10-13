@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './style.css';
 import Logo from './../../assets/logo/logo-transparent.png';
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -15,7 +17,7 @@ const NavBar = () => {
   const links = [
     {
       to: '/',
-      label: 'ACCUEIL',
+      label: t('navbar.home'),
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -34,7 +36,7 @@ const NavBar = () => {
     },
     {
       to: '/mesprojets',
-      label: 'PROJETS',
+      label: t('navbar.projects'),
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -54,7 +56,7 @@ const NavBar = () => {
     },
     {
       to: '/contacts',
-      label: 'CONTACT',
+      label: t('navbar.contact'),
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -77,7 +79,10 @@ const NavBar = () => {
     <>
       <header className={`header ${scrolled ? 'header_scrolled' : ''}`}>
         <div className="header_inner">
-          <div className="header_title">A.Farkhsi</div>
+          {/* <div className="header_title">A.Farkhsi</div> */}
+          <div className="header_title_container">
+            <span className="header_title">A.Farkhsi</span>
+          </div>
 
           <div className="header_logo">
             <img src={Logo} className="header_logo_img" alt="Logo A.Farkhsi" />

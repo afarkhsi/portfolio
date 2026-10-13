@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './style.css';
 
-const Card = ({ id, image, title, description, technologie, tags, link }) => {
+const Card = ({ id, image, title, technologie, tags, link }) => {
   const containerRef = useRef(null);
   const textRef = useRef(null);
   const [scrollDistance, setScrollDistance] = useState(0);
   const [needsScroll, setNeedsScroll] = useState(false);
+  const { t } = useTranslation();
+  const description = t(`projects.items.${id}.description`);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -57,7 +60,7 @@ const Card = ({ id, image, title, description, technologie, tags, link }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Voir le projet
+            {t('card.buttonLabel')}
           </a>
         </div>
 

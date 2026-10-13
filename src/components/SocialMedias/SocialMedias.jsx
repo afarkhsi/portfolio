@@ -3,6 +3,7 @@ import Linkedin from './../../assets/logo/linkedin.png';
 import Github from './../../assets/logo/github.png';
 import CvModal from './../CvModal/CvModal';
 import './style.css';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 const SocialMedias = () => {
   const [isCvOpen, setIsCvOpen] = useState(false);
@@ -35,6 +36,7 @@ const SocialMedias = () => {
         >
           <img className="networks_link_logo" src={Github} alt="logo github" />
         </a>
+        <LanguageSwitcher />
       </div>
 
       {isCvOpen && <CvModal onClose={() => setIsCvOpen(false)} />}
