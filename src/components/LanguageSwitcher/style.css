@@ -1,5 +1,7 @@
 .language-switcher {
-  position: relative;
+  position: fixed;
+  top: 110px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,13 +11,15 @@
   height: 76px;
   padding: 4px;
 
-  border: 1px solid rgba(128, 145, 175, 0.35);
-  border-radius: 5px;
-  background: #bbbbbb;
+  border: 1px solid rgba(233, 233, 233, 0.35);
+  border-radius: 5px 0px 0px 5px;
+  background-color: #e9e6e6;
 
   cursor: pointer;
   overflow: hidden;
   flex-shrink: 0;
+
+  z-index: 9999;
 
   transition:
     background-color 0.3s ease,
@@ -75,10 +79,6 @@
   transform: scale(0.85);
 }
 
-.language-switcher:hover {
-  border-color: rgba(73, 73, 73, 0.75);
-}
-
 /* Accessibilité clavier */
 .language-switcher:focus-visible {
   outline: 2px solid #4f8cff;
@@ -100,6 +100,7 @@
     flex-direction: row;
     width: 76px;
     height: 32px;
+    top: 13px;
   }
 
   .language-slider {
@@ -109,6 +110,12 @@
 
   .language-switcher.english .language-slider {
     transform: translateX(36px);
+  }
+}
+
+@media (max-width: 400px) {
+  .language-switcher {
+    top: 8px;
   }
 }
 

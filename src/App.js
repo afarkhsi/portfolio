@@ -5,11 +5,13 @@ import SocialMedias from './components/SocialMedias/SocialMedias';
 import HomePage from './pages/home';
 import Projects from './pages/projects';
 import Contact from './pages/contacts';
+import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher';
 
 function App() {
   return (
     <HashRouter>
       <NavBar />
+      <LanguageSwitcher />
       <SocialMedias />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
