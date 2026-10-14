@@ -79,11 +79,7 @@ const NavBar = () => {
     <>
       <header className={`header ${scrolled ? 'header_scrolled' : ''}`}>
         <div className="header_inner">
-          {/* <div className="header_title">A.Farkhsi</div> */}
-          <div className="header_title_container">
-            <span className="header_title">A.Farkhsi</span>
-          </div>
-
+          <div className="header_title">A.Farkhsi</div>
           <div className="header_logo">
             <img src={Logo} className="header_logo_img" alt="Logo A.Farkhsi" />
           </div>
