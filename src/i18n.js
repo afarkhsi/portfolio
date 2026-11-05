@@ -126,10 +126,9 @@ i18n.use(initReactI18next).init({
           name: 'Abdourrahman Farkhsi',
           availability: 'Disponible immédiatement',
           headline:
-            'Développeur Full-Stack Java / Spring • Angular • React • Python • Flutter',
+            'Développeur Full-Stack React • Python • Java / Spring • Angular • Flutter',
           intro:
-            "Développeur Full-Stack junior diplômé d'OpenClassrooms (titre RNCP niveau 7, bac+5), j'ai passé 12 mois en alternance chez Paramedic Technologies, dans une équipe d'environ 10 développeurs. J'y ai livré environ 60 tickets web et mobile (Flutter, React, Python), chacun testé (Pytest, Playwright, Patrol), pour une plateforme utilisée par des milliers de professionnels. Je conçois aussi des API REST sécurisées (Java, Spring Boot, JWT) et des interfaces Angular et React. Ancien responsable administratif et comptable (avec gestion du pôle IT de l'association EIAPIC), j'apporte une rigueur analytique et un sens du métier utiles en fintech, banque, assurance et gestion. Depuis la fin de mon alternance, je participe bénévolement à la conception technique et à l'architecture de la refonte numérique de l'association SIGMA F. Je recherche un poste de développeur Full-Stack junior au sein d'une équipe produit.",
-
+            'Développeur Full-Stack titulaire d’un titre bac+5 en développement logiciel. 12 mois en équipe de 10 développeurs chez Paramedic Technologies, sur une plateforme utilisée par des milliers de professionnels, avec une culture du test systématique. Ancien responsable administratif et comptable, j’apporte rigueur et compréhension des enjeux métier (fintech, banque, assurance, gestion).',
           skills: [
             {
               title: 'Back-end',
@@ -410,9 +409,9 @@ i18n.use(initReactI18next).init({
           name: 'Abdourrahman Farkhsi',
           availability: 'Available immediately',
           headline:
-            'Full-Stack Developer Java / Spring • Angular • React • Python • Flutter',
+            'Full-Stack Developer React • Python • Java / Spring • Angular • Flutter',
           intro:
-            "Junior Full-Stack Developer, graduate of OpenClassrooms (RNCP Level 7 title, Master's level), with 12 months of work-study experience (alternance) at Paramedic Technologies, in a team of about 10 developers. I delivered about 60 web and mobile tickets (Flutter, React, Python), each one tested (Pytest, Playwright, Patrol), for a platform used by thousands of professionals. I also build secure REST APIs (Java, Spring Boot, JWT) and Angular and React interfaces. A former administrative and accounting manager (who also ran the IT function of the EIAPIC association), I bring analytical rigor and business sense that are valuable in fintech, banking, insurance and management. Since the end of my work-study placement, I have volunteered on the technical design and architecture of the digital overhaul of the SIGMA F association. I am looking for a junior Full-Stack Developer position within a product team.",
+            "Full-Stack Developer with a Master's-level qualification (bac+5, RNCP Level 7) in software development. 12 months in a team of 10 developers at Paramedic Technologies, on a platform used by thousands of professionals, with a systematic testing culture. Former administrative and accounting manager, I bring rigor and an understanding of business needs (fintech, banking, insurance, management).",
           skills: [
             {
               title: 'Back-end',
